@@ -1,0 +1,395 @@
+/* Estilos generales */
+body {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(192,192,205,1) 30%, rgba(192,192,205,1) 70%, rgba(255,255,255,1) 100%);
+}
+
+h1 {
+    color: #6699ff;
+    font-size:28pt;
+    font-family:cursive;
+    text-align:center;
+    display: block;
+}
+
+#logo{
+    width: 33px;
+    height: 16px;
+}
+
+footer {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-top: groove;
+    margin-top: 50px;
+}
+
+/* Estilos para la pagina principal */
+#imgprincipal{
+    width: 45%;
+    margin: 10px;
+    padding: 15px;
+    display: inline-block;
+}
+
+#imgp{
+    border-radius: 15px;
+    width: 100%;
+}
+
+.somos{
+    width: 45%;
+    margin: 10px;
+    padding: 15px;
+    display: inline-block;
+}
+
+h3#somos{
+    text-align: center;
+}
+
+div.cabecera{
+    width: 100%;
+    display: inline-table;
+    position: relative;
+}
+
+.portada{
+    width: 100%;
+}
+
+/* Estilos para las tablas */
+table {
+    background-color: #eeeeee;
+    width:100%;
+    border-collapse: collapse;
+}
+
+tr {
+    text-align: center;
+    height: 50px;
+}
+
+th {
+    background-color: #6699ff;
+    color: #ffffff;
+}
+
+td {
+    border-style: solid;
+    border-width: 1.5pt;
+    border-color: #6699ff;
+}
+
+td a {
+    text-decoration: none;
+    color: #0066cc;
+    padding: 14pt 16pt;
+    display: block;
+    overflow: hidden;
+}
+
+.option {
+    display: inline-grid;
+}
+
+td a:hover {
+    color: white;
+    background-color: #6699ff; 
+}
+
+/* Estilos para la actividad */
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'header header header header header header'
+    'menu menu main main main main'
+    'footer footer footer footer footer footer';
+    grid-gap: 10px;
+}
+
+div.header { 
+    grid-area: header; 
+    position: relative;
+}
+
+div.main { 
+    grid-area: main; 
+}
+
+div.menu { 
+    grid-area: menu; 
+    /*background-color: white;*/
+    padding: 10px;
+}
+
+.footer { 
+    grid-area: footer;
+}
+
+#boton {
+    background: #31384A;
+    color: #fff;
+    border: 0;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 0;
+    margin-top: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para la barra de navegacion */
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+li.menu a.menu {
+    display: block;
+    color: white;
+    text-align: center;
+    float: left;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li.menu a.menu:hover {
+    background-color: #111111;
+}
+
+li#user {
+    float: right;
+    font-size: 17px;
+}
+
+/* Estilo para buscador */
+div.search {
+    float: left;
+    padding: 10px;
+}
+
+form.search input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 40%;
+    background: #f1f1f1;
+}
+
+form.search input[type=submit] {
+    float: right;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.search input[type=submit] {
+    background: #0b7dda;
+}
+
+form.search::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Estilo para el formulario */
+input.contactform[type=text], input.contactform[type=email], textarea.contactform {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+  
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+  
+input.contactform[type=submit] {
+    background-color: #4CAF50;
+    color: black;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: medium;
+}
+  
+input.contactform[type=submit]:hover {
+    background-color: #409445;
+}
+  
+div#formulario {
+    background-color: #f2f2f2;
+    border: groove;
+    border-radius: 7px;
+    width: 100%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+ 
+span {
+    color: red;
+    font-size: 15px;
+}
+
+.col-20, .col-80 {
+    width: 100%;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media only screen and (min-width: 700px) {
+    .col-20 {
+        width: 20%;
+        float: left;
+        margin-top: 0;
+    }
+    .col-80 {
+        width: 80%;
+        float: left;
+        margin-top: 0;
+    }
+    div#formulario {
+        width: 80%;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .col-20 {
+        width: 20%;
+        float: left;
+        margin-top: 0;
+    }
+    .col-80 {
+        width: 80%;
+        float: left;
+        margin-top: 0;
+    }
+    div#formulario {
+        width: 60%;
+    }
+}
+
+/* Estilos para el formulario de login */
+
+.formlogin{
+    width: 50%;
+    max-width: 500px;
+    margin: auto;
+    background: rgba(0,0,0,0.4);
+    padding: 30px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+.formlogin h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(0,0,0,0.5)
+}
+
+.formlogin input{
+    display: block;
+    padding: 5px;
+    width: 100%;
+    margin: 25px 0;
+    font-size: 20px;
+}
+
+.formlogin input[type="submit"]{
+    background: #31384A;
+    color: #fff;
+    border: 0;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 0;
+}
+
+.formlogin input[type="submit"]:hover{
+    opacity: 1;
+}
+
+.formlogin input[type="submit"]:active{
+    transform: scale(0.95);
+}
+
+.añadir a {
+    text-decoration: none;
+    background: #31384A;
+    float: right;
+    color: #fff;
+    border: 0;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 0;
+    margin-top: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.añadir a:hover{
+    opacity: 1;
+}
+
+@media (max-width:768px){
+  .formlogin{
+    width: 75%;
+  }
+}
+
+@media (max-width:480px){
+  .formlogin {
+    width: 95%;
+  }
+}
+
+/* Estilo version imprimir */
+
+@media print {
+    * {
+        color: black;
+        background-color: white;
+    }
+    body {
+        background-color: white;
+        font-family: roboto, raleway, verdana, sans-serif;
+    }
+    img, .footer, .menu {
+        display: none;
+    }
+}
+
+
+
